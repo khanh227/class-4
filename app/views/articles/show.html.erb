@@ -1,0 +1,25 @@
+<p>
+	<strong>Title:</strong>
+	<%= @article.title %>
+</p>
+
+<p>
+	<strong>Text:</strong>
+	<%= @article.text %>
+</p>
+
+<h2>Comments</h2>
+<!--
+This will now render the partial in app/views/comments/_comment.html.erb once for each comment that is in the @article.comments collection
+-->
+<%= render @article.comments %>
+
+<h2>Add a comment:</h2>
+<%= render 'comments/form' %>
+
+<%= link_to 'Edit', edit_article_path(@article) %>
+<%= link_to 'Back', articles_path %> <!-- can use controller: 'articles' -->
+<!-- 
+	If you want to link to an action in the same controller, you don't need to specify the :controller option.
+	Rails will use the current controller by default
+-->

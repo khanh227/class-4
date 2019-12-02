@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+    commenter: MyString
+    #body: #when create Comment Model see a error like "body:tex". "body: text" is right
+    body: MyText
+    article: one
+
+two:
+    commenter: MyString
+    #body: 
+    body: MyText
+    article: two

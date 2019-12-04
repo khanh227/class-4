@@ -31,6 +31,18 @@ gem 'bootsnap', '>= 1.4.2', require: false
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  %w[rspec-core rspec-expectations rspec-mocks rspec-rails rspec-support].each do |lib|
+    gem lib, :git => "https://github.com/rspec/#{lib}.git", :branch => 'master'
+  end
+  gem 'rails-controller-testing'
+  gem 'better_errors'
+  gem 'shoulda', '~> 3.6'
+  gem 'byebug', '~> 11.0', '>= 11.0.1'
+  gem 'spring', '~> 2.1'
+  gem 'timecop', '~> 0.9.1'
+  gem 'webmock', '~> 3.7', '>= 3.7.6'
+  gem 'gemsurance', '~> 0.10.0'
+  gem 'climate_control', '~> 0.2.0'
 end
 
 group :development do

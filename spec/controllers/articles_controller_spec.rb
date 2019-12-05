@@ -12,7 +12,7 @@ RSpec.describe ArticlesController, :type => :controller do
     it { expect(assigns(:articles)).to eq([article_1, article_2]) }
   end
 
-  describe "POST create" do
+  describe "POST #create" do
     context "Unauthorized" do
       it "You can not create a new article" do
         post :create

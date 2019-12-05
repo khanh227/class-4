@@ -1,5 +1,3 @@
-require 'faker'
-
 FactoryBot.define do
   factory :article do
     title { Faker::String.random(length: 5) }

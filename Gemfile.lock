@@ -291,8 +291,8 @@ DEPENDENCIES
   byebug
   capybara (>= 2.15)
   climate_control (~> 0.2.0)
-  factory_bot_rails (~> 5.1, >= 5.1.1)
-  faker (~> 2.8)
+  factory_bot_rails
+  faker
   gemsurance (~> 0.10.0)
   jbuilder (~> 2.7)
   listen (>= 3.0.5, < 3.2)

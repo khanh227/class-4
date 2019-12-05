@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby '2.6.5'
+ruby '2.6.3'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 6.0.1'
@@ -37,8 +37,6 @@ group :development, :test do
   gem 'rails-controller-testing'
   gem 'better_errors'
   gem 'shoulda', '~> 3.6'
-  gem 'byebug', '~> 11.0', '>= 11.0.1'
-  gem 'spring', '~> 2.1'
   gem 'timecop', '~> 0.9.1'
   gem 'webmock', '~> 3.7', '>= 3.7.6'
   gem 'gemsurance', '~> 0.10.0'
